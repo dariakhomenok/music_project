@@ -42,6 +42,10 @@ def tracks(request):
     t = Track.objects.all()
     return render(request, 'tracks.html', {'tracks': t})
 
+<<<<<<< HEAD
+=======
+#исполнители
+>>>>>>> work
 def artists(request):
     a = Artist.objects.all()
     return render(request, 'artists.html', {'artists': a})
