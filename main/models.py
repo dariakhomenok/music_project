@@ -10,9 +10,9 @@ class Genre(models.Model):
 
 class Track(models.Model):
     title = models.CharField(max_length=500, unique=True)
-    executor = models.CharField(max_length=500, null=True)
     duration = models.IntegerField()
     genre = models.ManyToManyField(Genre)
+    artist = models.ForeignKey(Artist, on_delete=models.RESTRICT, null=True)
 
     def __str__(self):
         return self.title

@@ -7,7 +7,6 @@
         <tr>
             <th>№</th>
             <th>Название</th>
-            <th>Исполнитель</th>
             <th>Длительность</th>
             <th>Жанры</th>
             <th></th>
@@ -19,7 +18,6 @@
         <tr>
             <td>{{t.id}}</td>
             <td>{{t.title}}</td>
-            <td>{{t.executor}}</td>
             <td>{{t.duration}}</td>
             <td>
                 {% for g in t.genre.all %}
